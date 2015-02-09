@@ -1,0 +1,35 @@
+<div layout="column" layout-fill>
+
+    <top ng-controller="sideLeft"></top>
+    <section layout="row" flex>
+        <navigation ng-controller="sideLeft"></navigation>
+    </section>
+
+</div>
+
+<div layout="column" layout-fill layout-align="start start">
+    <svg width="700px" height="700px" id="svg">
+            <image width="700px" height="700px" xlink:href="img/svg/chessboard.jpg" id="image"></image>
+    </svg>
+</div>
+
+
+
+
+    <md-dialog id="PromoModal" class="reveal-modal" data-reveal data-options="close_on_background_click:false">
+        <md-content>
+            <div layout="row" layout-align="center center">
+                <h1>{{ modal.title }}</h1>
+            </div>
+            <div layout="row" layout-align="center center">
+                <p>{{ modal.message }}</p>
+            </div>
+            <md-list>
+                <md-item ng-repeat="item in path">
+                    <md-item-content layout="column">
+                        <div ng-click="changePiece($index)"><img ng-src="{{item}}" alt=""/></div>
+                    </md-item-content>
+                </md-item>
+            </md-list>
+        </md-content>
+        </md-dialog>

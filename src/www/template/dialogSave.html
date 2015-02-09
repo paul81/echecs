@@ -1,0 +1,19 @@
+<md-dialog>
+    <md-content>
+        <div layout="row" layout-align="center center">
+            <h1>Entrer le nom du fichier de sauvegarde</h1>
+        </div>
+        <div layout="row" layout-align="center center">
+            <form style="padding: 20px;">
+                <div class="row">
+                    <md-text-float label="Nom du fichier" ng-model="fichier" type="text" class="long" style="width: 400px"></md-text-float>
+                </div>
+            </form>
+        </div>
+    </md-content>
+    <div class="md-actions" layout="row">
+        <md-button ng-click="getFileName()" class="md-primary">
+            Valider
+        </md-button>
+    </div>
+</md-dialog>

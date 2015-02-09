@@ -1,0 +1,14 @@
+<md-dialog aria-label="Mango (Fruit)">
+  <md-content>
+    <div layout="row" layout-align="center center" ng-init="rating = 1">
+      <h1>Niveau de l'IA {{rating}}</h1>
+    </div>
+    <md-slider md-discrete ng-model="rating" step="1" min="1" max="5" aria-label="rating">
+    </md-slider>
+  </md-content>
+  <div class="md-actions" layout="row">
+    <md-button ng-click="answer('useful')" class="md-primary">
+      Valider
+    </md-button>
+  </div>
+</md-dialog>

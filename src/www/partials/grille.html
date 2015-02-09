@@ -1,0 +1,28 @@
+<svg width="700px" height="700px" id="svg">
+        <image width="700px" height="700px" xlink:href="img/svg/chessboard.jpg" id="image"></image>
+</svg>
+
+<div id="firstModal" class="reveal-modal" data-reveal>
+    <h2>{{ modal.title }}</h2>
+    <p style="color: black;">{{ modal.message }}</p>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+<div id="PromoModal" class="reveal-modal" data-reveal data-options="close_on_background_click:false">
+    <h2>{{ modal.title }}</h2>
+    <p style="color: black;">{{ modal.message }}</p>
+    <div ng-repeat="item in path">
+        <div ng-click="changePiece($index)"><img ng-src= '{{ item }}' alt=""/></div>
+    </div>
+</div>
+
+<div id="alertJoueur" class="reveal-modal" data-reveal>
+    <h3>{{ alertJoueur }}</h3>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="alertJoueurRepet" class="reveal-modal" data-reveal>
+    <h3>{{ alertJoueurRepet }}</h3>
+    <a class="close-reveal-modal">&#215;</a>
+</div>

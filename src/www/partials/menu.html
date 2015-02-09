@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="large-8 large-centered columns end">
+        <h1 style="text-align:center">Echec</h1>
+    </div>
+</div>
+
+<div class="row menu">
+    <a ng-href="#/grille"><div class="large-6 columns grid aqua">
+        <h1>Nouvelle partie</h1>
+    </div></a>
+    <div ng-click="load()" class="large-6 columns grid blue">
+        <h1>Charger une partie</h1>
+    </div>
+</div>
+
+
+<div id="alert" class="reveal-modal" data-reveal>
+    <h2>{{ modal.title }}</h2>
+    <p style="color: black;">{{ modal.message }}</p>
+    <a class="close-reveal-modal">&#215;</a>
+</div>

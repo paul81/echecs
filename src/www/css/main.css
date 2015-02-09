@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'bebas';
+    src: url('BebasNeue-webfont.eot');
+    src: url('BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('BebasNeue-webfont.woff') format('woff'),
+         url('BebasNeue-webfont.ttf') format('truetype'),
+         url('BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+	border-sizing:border-box;
+	color: white;
+	background: rgb(14,16,44);
+	font-family: 'bebas';
+	overflow-x: hidden;
+}
+
+h1 {
+	font-family: 'bebas';
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	color: white;
+}
+
+
+.grille {
+	position: relative;
+	display: block;
+}
+
+span {
+	position: relative;
+	margin-top: 5px
+}
+
+img {
+	display: block !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.grid {
+	height: 305px;
+	padding-top: 200px;
+	transition: all 0.5s;
+}
+
+.grid:hover {
+	padding-top: 50px;
+}
+
+.aqua {
+	background: rgb(134, 193, 242);
+}
+
+.blue {
+	background: cornflowerblue;
+}
+
+.menu {
+	margin-top: 5%;
+}
+

@@ -1,0 +1,22 @@
+<md-dialog>
+    <md-content>
+        <div layout="row" layout-align="center center">
+            <h1>Bienvenue sur le jeu d'échecs</h1>
+        </div>
+    </md-content>
+    <div class="md-actions" layout="column">
+        <md-button ng-show="!selectionFichier" ng-click="normaleGame()" class="md-primary">
+            Partie normale
+        </md-button>
+        <md-button ng-show="!selectionFichier" ng-click="jouerIA()" class="md-primary">
+            Joueur VS Ia
+        </md-button>
+        <md-button ng-show="selectionFichier" ng-click="newGame()" class="md-primary">
+            Nouvelle partie
+        </md-button>
+        <md-button  ng-show="selectionFichier" ng-click="loadGame()" class="md-primary">
+            Charger une partie
+        </md-button>
+
+    </div>
+</md-dialog>

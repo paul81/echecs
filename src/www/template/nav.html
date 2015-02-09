@@ -1,0 +1,16 @@
+        <md-sidenav class="md-sidenav-left md-whiteframe" md-component-id="left">
+          <md-toolbar style="background: #E0E0E0; height:144px;box-shadow: 0 2px rgba(0,0,0,0.2);">
+            <h1 class="md-toolbar-tools" style="padding-left: 24px">
+                <img ng-src="img/ic_menu_24px.svg" alt="" ng-click="close()"/>
+            </h1>
+          </md-toolbar>
+          <md-content>
+            <md-list>
+                <md-item ng-repeat="item in data">
+                    <md-item-content>
+                        <md-button ng-click="item.func()" style="width:100%; padding:30px; color:black">{{item.name}}</md-button>
+                    </md-item-content> 
+                </md-item>
+            </md-list>
+          </md-content>
+        </md-sidenav>

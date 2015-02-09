@@ -1,0 +1,24 @@
+<md-dialog aria-label="Mango (Fruit)" ng-controller="grille">
+    <md-content>
+        <div layout="row" layout-align="center center">
+            <h1>Promotion</h1>
+        </div>
+        <md-list>
+            <md-item ng-repeat="item in path">
+                <md-item-content>
+                    <div ng-click="changePiece($index)"><img ng-src="{{item}}" alt=""/></div>
+                </md-item-content>
+            </md-item>
+        </md-list>
+
+    </md-content>
+    <div class="md-actions" layout="row">
+        <md-button ng-click="answer('useful')" class="md-primary">
+            Valider
+        </md-button>
+    </div>
+    </md-dial>
+
+
+
+

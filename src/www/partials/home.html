@@ -1,0 +1,16 @@
+    <div layout="column" layout-fill>
+        <header ng-controller="sideLeft"></header>
+        <section layout="row" flex>
+            <navigation ng-controller="sideLeft"></navigation>
+            <md-content flex class="md-padding">
+                <div ng-click="go('/grille')" class="menuSelection" layout="column" layout-fill layout-align="center center" style="padding-top:5%; padding-bottom:5%">
+                    <h1>Jouer mode normal</h1>
+                </div>
+                <md-divider></md-divider>
+                <div class="menuSelection" ng-click="setIa()" layout="column" layout-fill layout-align="center center" style="padding-top:5%; padding-bottom:5%">
+                    <h1>Jouer contre l'IA</h1>
+                </div>
+                <md-divider></md-divider>
+            </md-content>
+        </section>
+    </div>
